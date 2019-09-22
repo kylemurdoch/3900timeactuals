@@ -21,6 +21,6 @@ app.use('/api/posts', posts);
         res.sendFile(__dirname + "/public/index.html");
     });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
